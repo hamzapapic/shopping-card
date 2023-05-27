@@ -7,7 +7,7 @@ const AppContext = createContext();
 function ContextProvider({ children }) {
   const [products, setProducts] = useState(productsJSON);
   const [cart, setCart] = useState([]);
-
+  const [ItemsInCart, SetItemsInCart] = useState({});
   const addToCart = (id) => {
     if (products.find((product) => product.id === id).quantity === 0) {
       toast.error("There are no product in stock!");

@@ -14,7 +14,6 @@ export default function Products() {
   };
   const productsPerPage = 15;
   const numOfPages = Math.ceil(products.length / productsPerPage);
-
   console.log(products);
   console.log(cart);
   return (
